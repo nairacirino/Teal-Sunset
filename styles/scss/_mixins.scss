@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@mixin flex-rule($direction, $align, $justify, $content, $wrap) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+    align-content: $content;
+    flex-wrap: $wrap;
+}
+
+@mixin square {
+    -webkit-box-shadow: 2px 2px 10px 2px #a1a1a1;
+    box-shadow: 2px 2px 10px 2px #a1a1a1;
+}
+
+@mixin round-pictures($width) {
+    width: $width;
+    height: $width;
+    border-radius: 50%;
+}
+
+@mixin square-pictures($width) {
+    width: $width;
+    height: $width;
+}
