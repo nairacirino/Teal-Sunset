@@ -6,4 +6,68 @@
 @use "style-guide";
 @use "portfolio";
 @use "mixins";
+@use "posts";
 
+//general styles
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   width: 100%;
+   height: 100%;
+   background-color: #fff;
+   font: {
+      family: style-guide.$sans-serif1;
+      size: 16px;
+   }
+   color: style-guide.$black;
+   @include mixins.flex-rule(column, center, center, center, nowrap);
+}
+
+.container {
+   width: 80%;
+   max-width: 1200px;
+   background-color: style-guide.$white;
+   @include mixins.square;
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+select {
+   border: none;
+   color: inherit;
+}
+
+h1 {
+   font-size: 1.5rem;
+   text-transform: uppercase;
+}
+
+h2 {
+   font-size: 1.3rem;
+}
+
+//header
+
+.top-bar {
+   padding: 0.5rem 0;
+   background-color: style-guide.$dark-color1;
+   color: style-guide.$white;
+   text: {
+      align: center;
+      transform: uppercase;
+   }
+   font-size: 0.5rem;
+   letter-spacing: 1rem;
+}

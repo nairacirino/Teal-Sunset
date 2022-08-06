@@ -6,119 +6,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teal Sunset - Portfólio</title>
+    <title>Teal Sunset - Página de Posts</title>
 
     <!--stylesheets-->
     <link rel="stylesheet" href="./styles/css/style.css">
 </head>
 
-<body>
+<body class="post-page">
     <div class="container">
         <!--header-->
         <header>
             <div class="top-bar" id="top">
-                <p class="top-bar-text">Teal Sunset - Portfólio</p>
+                <p class="top-bar-text">Teal Sunset - Página de Posts</p>
             </div>
-            <div class="id-card">
-                <figure>
-                    <img class="round-picture" src="./assets/headshot.jpg" alt="">
-                </figure>
-                <section class="id-text">
-                    <h1>Teal Sunset</h1>
-                    <p><b>Profissão ou Cargo Pretendido</b></p>
-                    <p>email@email.com</p>
-                    <p>(00) 00000-0000</p>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ex quisquam hic, nulla incidunt
-                        omnis dignissimos exercitationem, aliquam saepe doloribus officia ratione tempore pariatur.
-                        Voluptatum sint doloremque alias ipsum eos.</p>
-                </section>
+            <div class="banner">
+                <div class="banner-picture">
+                    <h1 class="post-title">Título do Post</h1>
+                    <nav>
+                        <ul class="main-menu">
+                            <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-share"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-bookmark"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
         <!--end header-->
 
-        <!--navigation-->
-        <nav class="highlights">
-            <figure class="portfolio">
-                <img class="round-picture" src="./assets/h3.png" alt="">
-                <figcaption>Portfólio</figcaption>
-            </figure>
-            <figure class="curriculum">
-                <img class="round-picture" src="./assets/h2.png" alt="">
-                <figcaption>Currículo</figcaption>
-            </figure>
-            <figure class="useful-links">
-                <img class="round-picture" src="./assets/h4.png" alt="">
-                <figcaption>Links</figcaption>
-            </figure>
-            <figure class="blog">
-                <img class="round-picture" src="./assets/h1.png" alt="">
-                <figcaption>Blog</figcaption>
-            </figure>
-        </nav>
-        <!--end navigation-->
-
         <!--main-->
         <main>
-            <section class="pagination">
-                <ul>
-                    <li class="all-projects active">Todos</li>
-                    <li class="angular">Angular</li>
-                    <li class="wordpress">Wordpress</li>
-                    <li class="basics">Snippets</li>
-                    <li class="favorites">Favoritos</li>
-                </ul>
-                <p class="all-projects">Todos os meus projetos concluídos.</p>
-                <p class="angular">Meus projetos em Angular 2</p>
-                <p class="wordpress">Templates WordPress</p>
-                <p class="basics">Pequenos projetos em HTML, SASS e JS.</p>
-                <p class="favorites">Meus projetos favoritos.</p>
+            <section class="post-area">
+                <div class="post">
+                    <p><small><b>Escrito por Fulano às 00/00/0000 às 00:00</b></small></p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque deserunt officiis quisquam,
+                        mollitia iste recusandae porro molestiae reprehenderit ut sunt non fugit labore, accusamus
+                        assumenda quia saepe pariatur veritatis. Nihil?</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque deserunt officiis quisquam,
+                        mollitia iste recusandae porro molestiae reprehenderit ut sunt non fugit labore, accusamus
+                        assumenda quia saepe pariatur veritatis. Nihil?</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque deserunt officiis quisquam,
+                        mollitia iste recusandae porro molestiae reprehenderit ut sunt non fugit labore, accusamus
+                        assumenda quia saepe pariatur veritatis. Nihil?</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque deserunt officiis quisquam,
+                        mollitia iste recusandae porro molestiae reprehenderit ut sunt non fugit labore, accusamus
+                        assumenda quia saepe pariatur veritatis. Nihil?</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque deserunt officiis quisquam,
+                            mollitia iste recusandae porro molestiae reprehenderit ut sunt non fugit labore, accusamus
+                            assumenda quia saepe pariatur veritatis. Nihil?</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque deserunt officiis quisquam,
+                            mollitia iste recusandae porro molestiae reprehenderit ut sunt non fugit labore, accusamus
+                            assumenda quia saepe pariatur veritatis. Nihil?</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque deserunt officiis quisquam,
+                            mollitia iste recusandae porro molestiae reprehenderit ut sunt non fugit labore, accusamus
+                            assumenda quia saepe pariatur veritatis. Nihil?</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque deserunt officiis quisquam,
+                            mollitia iste recusandae porro molestiae reprehenderit ut sunt non fugit labore, accusamus
+                            assumenda quia saepe pariatur veritatis. Nihil?</p>
+                </div>
+                <textarea name="comment-input" id="comment-input"></textarea>
+                <button>Comentar</button>
+                <div class="comment">
+                    <figure>
+                        <img class="round-picture" src="./assets/headshot.jpg" alt="">
+                    </figure>
+                    <div class="text">
+                        <p><b>Fulano comentou:</b></p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque deserunt officiis
+                            quisquam,
+                            mollitia iste recusandae porro molestiae reprehenderit ut sunt non fugit labore, accusamus
+                            assumenda quia saepe pariatur veritatis. Nihil?</p>
+                        <p><b>00/00/0000 às 00:00hs</b></p>
+                    </div>
+                </div>
             </section>
-            <section class="gallery">
-                <figure class="flip-card-container">
-                    <img class="square-picture" src="./assets/1.jpg" alt="">
-                </figure>
-                <figure class="flip-card-container">
-                    <img class="square-picture" src="./assets/2.jpg" alt="">
-                </figure>
-                <figure class="flip-card-container">
-                    <img class="square-picture" src="./assets/3.jpg" alt="">
-                </figure>
-                <figure class="flip-card-container">
-                    <img class="square-picture" src="./assets/4.jpg" alt="">
-                </figure>
-                <figure class="flip-card-container">
-                    <img class="square-picture" src="./assets/5.jpg" alt="">
-                </figure>
-                <figure class="flip-card-container">
-                    <img class="square-picture" src="./assets/6.jpg" alt="">
-                </figure>
-                <figure class="flip-card-container">
-                    <img class="square-picture" src="./assets/7.jpg" alt="">
-                </figure>
-                <figure class="flip-card-container">
-                    <img class="square-picture" src="./assets/8.jpg" alt="">
-                </figure>
-                <figure class="flip-card-container">
-                    <img class="square-picture" src="./assets/9.jpg" alt="">
-                </figure>
-                <figure class="flip-card-container">
-                    <img class="square-picture" src="./assets/10.jpg" alt="">
-                </figure>
-                <figure class="flip-card-container">
-                    <img class="square-picture" src="./assets/11.jpg" alt="">
-                </figure>
-                <figure class="flip-card-container">
-                    <img class="square-picture" src="./assets/12.jpg" alt="">
-                </figure>
-            </section>
+            <aside>
+                <div class="recent-posts">
+                    <h3>Posts Recentes</h3>
+                    <figure>
+                        <img class="square-picture" src="./assets/1.jpg" alt="">
+                        <figcaption>
+                            <p><b>Título do Post</b></p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque distinctio quasi magnam
+                                quae odio deserunt</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img class="square-picture" src="./assets/3.jpg" alt="">
+                        <figcaption>
+                            <p><b>Título do Post</b></p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque distinctio quasi magnam
+                                quae odio deserunt</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img class="square-picture" src="./assets/9.jpg" alt="">
+                        <figcaption>
+                            <p><b>Título do Post</b></p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque distinctio quasi magnam
+                                quae odio deserunt</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="categories">
+                    <h3>Categorias</h3>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                </div>
+            </aside>
         </main>
         <!--end main-->
 
         <!--footer-->
         <footer>
             <section class="copyright">
-                <p>&copy; Naira Cirino - 2022 | License CC BY-NC-SA</p>
+                <p>&copy; Naira Cirino | License CC BY-NC-SA</p>
             </section>
             <section class="language">
                 <select name="" id="">
