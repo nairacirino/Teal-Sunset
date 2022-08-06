@@ -11,7 +11,7 @@ body {
   background-color: #fff;
   font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
-  color: #252923;
+  color: #5e5e5e;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,9 +34,12 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
-a:hover {
-  text-decoration: overline;
+
+select {
+  border: none;
+  color: inherit;
 }
 
 h1 {
@@ -50,7 +53,7 @@ h2 {
 
 .top-bar {
   padding: 0.5rem 0;
-  background-color: #252923;
+  background-color: #448887;
   color: #fcfcfa;
   text-align: center;
   text-transform: uppercase;
@@ -103,6 +106,9 @@ h2 {
   font-size: 0.7rem;
   font-weight: bold;
 }
+.highlights figcaption {
+  margin-top: 0.5rem;
+}
 .highlights .round-picture {
   width: 120px;
   height: 120px;
@@ -124,13 +130,14 @@ h2 {
   align-content: normal;
   flex-wrap: wrap;
   text-transform: uppercase;
+  font-weight: bold;
   gap: 35px;
 }
 .pagination ul li {
   padding-top: 0.5rem;
 }
 .pagination ul li.active {
-  border-top: 3px solid red;
+  border-top: 3px solid #448887;
 }
 
 .gallery {
@@ -159,6 +166,8 @@ footer {
   justify-content: space-between;
   align-content: center;
   flex-wrap: wrap;
+  background-color: #99cccd;
+  color: #448887;
 }
 footer .social-links,
 footer .language,
@@ -180,7 +189,7 @@ footer .round-picture {
   justify-content: flex-end;
   align-content: normal;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 25px;
 }
 
 .language {

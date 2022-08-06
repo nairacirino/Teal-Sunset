@@ -36,9 +36,12 @@ ul {
 
 a {
     text-decoration: none;
-    &:hover {
-        text-decoration: overline;
-    }
+    color: inherit;
+}
+
+select {
+    border: none;
+    color: inherit;
 }
 
 h1 {
@@ -54,7 +57,7 @@ h2 {
 
 .top-bar {
     padding: 0.5rem 0;
-    background-color: style-guide.$black;
+    background-color: style-guide.$dark-color1;
     color: style-guide.$white;
     text: {
         align: center;
@@ -103,6 +106,9 @@ h2 {
         size: 0.7rem;
         weight: bold;
     }
+    figcaption {
+        margin-top: .5rem;
+    }
     .round-picture {
         @include mixins.round-pictures(120px);
         @include mixins.square;
@@ -117,13 +123,14 @@ h2 {
         padding-bottom: 2rem;
         @include mixins.flex-rule(row, center, center, normal, wrap);
         text-transform: uppercase;
+        font-weight: bold;
         gap: 35px;
 
         li {
             padding-top: .5rem;
 
             &.active {
-                border-top: 3px solid red;
+                border-top: 3px solid style-guide.$dark-color1;
             }
         }
     }
@@ -146,6 +153,8 @@ h2 {
 footer {
     padding: 0.5rem 1rem;
     @include mixins.flex-rule(row, center, space-between, center, wrap);
+    background-color: style-guide.$light-color1;
+    color: style-guide.$dark-color1;
 
     .social-links,
     .language,
@@ -161,7 +170,7 @@ footer {
 
 .social-links {
     @include mixins.flex-rule(row, center, flex-end, normal, wrap);
-    gap: 5px;
+    gap: 25px;
 }
 
 .language {
