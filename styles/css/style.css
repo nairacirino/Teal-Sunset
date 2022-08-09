@@ -141,6 +141,38 @@ footer .round-picture {
   flex-wrap: wrap;
 }
 
+.flip-card-container {
+  perspective: 1000;
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+.flipper {
+  box-sizing: border-box;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  cursor: pointer;
+}
+
+.card-front {
+  width: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.card-back {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
 .post-page .banner {
   box-sizing: border-box;
   margin: 3rem 2rem;
@@ -400,6 +432,10 @@ footer .round-picture {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.hide {
+  display: none;
 }
 
 html {

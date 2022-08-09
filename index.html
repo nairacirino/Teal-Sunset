@@ -62,54 +62,97 @@
         <main>
             <section class="pagination">
                 <ul id="categories-links">
-                    <li><a class="categorie all-projects active" href="#categories-links" onclick="showActive(this);">Todos</a></li>
-                    <li><a class="categorie angular" href="#categories-links" onclick="showActive(this);">Angular</a></li>
-                    <li><a class="categorie wordpress" href="#categories-links" onclick="showActive(this);">Wordpress</a></li>
-                    <li><a class="categorie basics" href="#categories-links" onclick="showActive(this);">Snippets</a></li>
-                    <li><a class="categorie favorites" href="#categories-links" onclick="showActive(this);">Favoritos</a></li>
+                    <li><a class="categorie all-projects active" href="#categories-links"
+                            onclick="pagination(this);">Todos</a></li>
+                    <li><a class="categorie angular" href="#categories-links"
+                            onclick="pagination(this);">Angular</a></li>
+                    <li><a class="categorie wordpress" href="#categories-links"
+                            onclick="pagination(this);">Wordpress</a></li>
+                    <li><a class="categorie basics" href="#categories-links"
+                            onclick="pagination(this);">Snippets</a></li>
+                    <li><a class="categorie favorites" href="#categories-links"
+                            onclick="pagination(this);">Favoritos</a></li>
                 </ul>
-                <p class="all-projects">Todos os meus projetos concluídos.</p>
-                <p class="angular">Meus projetos em Angular 2</p>
-                <p class="wordpress">Templates WordPress</p>
-                <p class="basics">Pequenos projetos em HTML, SASS e JS.</p>
-                <p class="favorites">Meus projetos favoritos.</p>
+                <div id="categories-description">
+                    <p class="all-projects">Todos os meus projetos concluídos.</p>
+                    <p class="angular hide">Meus projetos em Angular 2</p>
+                    <p class="wordpress hide">Templates WordPress</p>
+                    <p class="basics hide">Pequenos projetos em HTML, SASS e JS.</p>
+                    <p class="favorites hide">Meus projetos favoritos.</p>
+                </div>
             </section>
             <section id="gallery" class="gallery">
                 <figure class="flip-card-container">
-                    <img class="square-picture" src="./assets/1.jpg" alt="">
+                    <div id="figure1" class="flipper square-picture">
+                        <img class="card-front" src="./assets/1.jpg" alt="" onmouseenter="flipCard('figure1')">
+                        <img class="card-back" src="./assets/2.jpg" alt="" onmouseout="flipCard('figure1')">
+                    </div>
                 </figure>
                 <figure class="flip-card-container">
-                    <img class="square-picture" src="./assets/2.jpg" alt="">
+                    <div id="figure2" class="flipper square-picture">
+                        <img class="card-front" src="./assets/2.jpg" alt="" onmouseenter="flipCard('figure2')">
+                        <img class="card-back" src="./assets/1.jpg" alt="" onmouseout="flipCard('figure2')">
+                    </div>
                 </figure>
                 <figure class="flip-card-container">
-                    <img class="square-picture" src="./assets/3.jpg" alt="">
+                    <div id="figure3" class="flipper square-picture">
+                        <img class="card-front" src="./assets/3.jpg" alt="" onmouseenter="flipCard('figure3')">
+                        <img class="card-back" src="./assets/2.jpg" alt="" onmouseout="flipCard('figure3')">
+                    </div>
                 </figure>
                 <figure class="flip-card-container">
-                    <img class="square-picture" src="./assets/4.jpg" alt="">
+                    <div id="figure4" class="flipper square-picture">
+                        <img class="card-front" src="./assets/4.jpg" alt="" onmouseenter="flipCard('figure4')">
+                        <img class="card-back" src="./assets/2.jpg" alt="" onmouseout="flipCard('figure4')">
+                    </div>
                 </figure>
                 <figure class="flip-card-container">
-                    <img class="square-picture" src="./assets/5.jpg" alt="">
+                    <div id="figure5" class="flipper square-picture">
+                        <img class="card-front" src="./assets/5.jpg" alt="" onmouseenter="flipCard('figure5')">
+                        <img class="card-back" src="./assets/2.jpg" alt="" onmouseout="flipCard('figure5')">
+                    </div>
                 </figure>
                 <figure class="flip-card-container">
-                    <img class="square-picture" src="./assets/6.jpg" alt="">
+                    <div id="figure6" class="flipper square-picture">
+                        <img class="card-front" src="./assets/6.jpg" alt="" onmouseenter="flipCard('figure6')">
+                        <img class="card-back" src="./assets/2.jpg" alt="" onmouseout="flipCard('figure6')">
+                    </div>
                 </figure>
                 <figure class="flip-card-container">
-                    <img class="square-picture" src="./assets/7.jpg" alt="">
+                    <div id="figure7" class="flipper square-picture">
+                        <img class="card-front" src="./assets/7.jpg" alt="" onmouseenter="flipCard('figure7')">
+                        <img class="card-back" src="./assets/2.jpg" alt="" onmouseout="flipCard('figure7')">
+                    </div>
                 </figure>
                 <figure class="flip-card-container">
-                    <img class="square-picture" src="./assets/8.jpg" alt="">
+                    <div id="figure8" class="flipper square-picture">
+                        <img class="card-front" src="./assets/8.jpg" alt="" onmouseenter="flipCard('figure8')">
+                        <img class="card-back" src="./assets/2.jpg" alt="" onmouseout="flipCard('figure8')">
+                    </div>
                 </figure>
                 <figure class="flip-card-container">
-                    <img class="square-picture" src="./assets/9.jpg" alt="">
+                    <div id="figure9" class="flipper square-picture">
+                        <img class="card-front" src="./assets/9.jpg" alt="" onmouseenter="flipCard('figure9')">
+                        <img class="card-back" src="./assets/2.jpg" alt="" onmouseout="flipCard('figure9')">
+                    </div>
                 </figure>
                 <figure class="flip-card-container">
-                    <img class="square-picture" src="./assets/10.jpg" alt="">
+                    <div id="figure10" class="flipper square-picture">
+                        <img class="card-front" src="./assets/10.jpg" alt="" onmouseenter="flipCard('figure10')">
+                        <img class="card-back" src="./assets/2.jpg" alt="" onmouseout="flipCard('figure10')">
+                    </div>
                 </figure>
                 <figure class="flip-card-container">
-                    <img class="square-picture" src="./assets/11.jpg" alt="">
+                    <div id="figure11" class="flipper square-picture">
+                        <img class="card-front" src="./assets/11.jpg" alt="" onmouseenter="flipCard('figure11')">
+                        <img class="card-back" src="./assets/2.jpg" alt="" onmouseout="flipCard('figure11')">
+                    </div>
                 </figure>
                 <figure class="flip-card-container">
-                    <img class="square-picture" src="./assets/12.jpg" alt="">
+                    <div id="figure12" class="flipper square-picture">
+                        <img class="card-front" src="./assets/12.jpg" alt="" onmouseenter="flipCard('figure12')">
+                        <img class="card-back" src="./assets/2.jpg" alt="" onmouseout="flipCard('figure12')">
+                    </div>
                 </figure>
             </section>
         </main>

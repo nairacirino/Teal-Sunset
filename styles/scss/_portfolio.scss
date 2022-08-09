@@ -45,7 +45,7 @@
         weight: bold;
     }
     figcaption {
-        margin-top: .5rem;
+        margin-top: 0.5rem;
         cursor: pointer;
     }
     .round-picture {
@@ -67,7 +67,7 @@
         gap: 35px;
 
         li {
-            padding-top: .5rem;
+            padding-top: 0.5rem;
 
             a.active {
                 border-top: 3px solid style-guide.$dark-color1;
@@ -115,4 +115,36 @@ footer {
 
 .language {
     @include mixins.flex-rule(row, center, center, normal, wrap);
+}
+
+.flip-card-container {
+    perspective: 1000;
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+.flipper {
+    box-sizing: border-box;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    cursor: pointer;
+}
+
+.card-front {
+    width: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.card-back {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
 }
