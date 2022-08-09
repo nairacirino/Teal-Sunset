@@ -7,8 +7,8 @@
 
 .id-card {
     width: 100%;
-    margin: 5rem 0;
-    padding: 2rem;
+    margin: 3rem 0;
+    padding: 0 2rem;
     @include mixins.flex-rule(row, center, space-evenly, center, wrap);
     text-align: center;
 
@@ -46,10 +46,12 @@
     }
     figcaption {
         margin-top: .5rem;
+        cursor: pointer;
     }
     .round-picture {
         @include mixins.round-pictures(120px);
         @include mixins.square;
+        cursor: pointer;
     }
 }
 
@@ -67,7 +69,7 @@
         li {
             padding-top: .5rem;
 
-            &.active {
+            a.active {
                 border-top: 3px solid style-guide.$dark-color1;
             }
         }

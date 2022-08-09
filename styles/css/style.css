@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,700;1,400;1,700&family=Marck+Script&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 .id-card {
   width: 100%;
-  margin: 5rem 0;
-  padding: 2rem;
+  margin: 3rem 0;
+  padding: 0 2rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -46,6 +46,7 @@
 }
 .highlights figcaption {
   margin-top: 0.5rem;
+  cursor: pointer;
 }
 .highlights .round-picture {
   width: 120px;
@@ -53,6 +54,7 @@
   border-radius: 50%;
   -webkit-box-shadow: 2px 2px 10px 2px #a1a1a1;
   box-shadow: 2px 2px 10px 2px #a1a1a1;
+  cursor: pointer;
 }
 
 .pagination {
@@ -74,7 +76,7 @@
 .pagination ul li {
   padding-top: 0.5rem;
 }
-.pagination ul li.active {
+.pagination ul li a.active {
   border-top: 3px solid #448887;
 }
 
@@ -302,12 +304,106 @@ footer .round-picture {
   height: 40%;
 }
 
+.curriculum h3 {
+  text-transform: uppercase;
+}
+.curriculum span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-content: normal;
+  flex-wrap: nowrap;
+  font-weight: bold;
+}
+.curriculum .section-area {
+  margin-bottom: 2rem;
+}
+.curriculum hr {
+  margin-bottom: 0.5rem;
+}
+.curriculum .progressbar {
+  margin-bottom: 1.5rem;
+}
+.curriculum .progressbar:last-child {
+  margin-bottom: 0;
+}
+.curriculum .bar-container {
+  height: 1rem;
+  border: 1px solid #dd7649;
+}
+.curriculum .bar-fill {
+  height: 100%;
+  background-color: #dd7649;
+}
+.curriculum .n1 {
+  width: 60%;
+}
+.curriculum .n2 {
+  width: 25%;
+}
+.curriculum .n3 {
+  width: 90%;
+}
+.curriculum .n4 {
+  width: 75%;
+}
+.curriculum .n5 {
+  width: 40%;
+}
+.curriculum main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  align-content: normal;
+  flex-wrap: wrap;
+}
+.curriculum main section {
+  width: 65%;
+  padding: 0 2rem 2rem 2rem;
+}
+.curriculum main section li {
+  margin-top: 2rem;
+}
+.curriculum main aside {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  align-content: normal;
+  flex-wrap: wrap;
+  width: 30%;
+  padding: 2rem;
+  background-color: #f2a24b;
+  text-align: center;
+  font-weight: bold;
+}
+.curriculum main aside div {
+  line-height: 2.5vw;
+}
+.curriculum main aside div h3 {
+  background-color: #5e5e5e;
+  color: #fcfcfa;
+  margin-bottom: 1rem;
+  font-size: 95%;
+}
+.curriculum main aside div:nth-child(1) h3 {
+  margin-top: -45px;
+  margin-bottom: 1.5rem;
+}
+
 /* Copyright 2022 Naira Cirino | License CC BY-NC-SA
    Learn more in https://creativecommons.org/licenses/by-nc-sa/4.0/ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

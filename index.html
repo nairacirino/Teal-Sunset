@@ -26,8 +26,8 @@
                 <section class="id-text">
                     <h1>Teal Sunset</h1>
                     <p><b>Profissão ou Cargo Pretendido</b></p>
-                    <p>email@email.com</p>
-                    <p>(00) 00000-0000</p>
+                    <p><a href="">email@email.com</a></p>
+                    <p><a href="">(00) 00000-0000</a></p>
                     <br>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ex quisquam hic, nulla incidunt
                         omnis dignissimos exercitationem, aliquam saepe doloribus officia ratione tempore pariatur.
@@ -61,12 +61,12 @@
         <!--main-->
         <main>
             <section class="pagination">
-                <ul>
-                    <li class="all-projects active">Todos</li>
-                    <li class="angular">Angular</li>
-                    <li class="wordpress">Wordpress</li>
-                    <li class="basics">Snippets</li>
-                    <li class="favorites">Favoritos</li>
+                <ul id="categories-links">
+                    <li><a class="categorie all-projects active" href="#categories-links" onclick="showActive(this);">Todos</a></li>
+                    <li><a class="categorie angular" href="#categories-links" onclick="showActive(this);">Angular</a></li>
+                    <li><a class="categorie wordpress" href="#categories-links" onclick="showActive(this);">Wordpress</a></li>
+                    <li><a class="categorie basics" href="#categories-links" onclick="showActive(this);">Snippets</a></li>
+                    <li><a class="categorie favorites" href="#categories-links" onclick="showActive(this);">Favoritos</a></li>
                 </ul>
                 <p class="all-projects">Todos os meus projetos concluídos.</p>
                 <p class="angular">Meus projetos em Angular 2</p>
@@ -74,7 +74,7 @@
                 <p class="basics">Pequenos projetos em HTML, SASS e JS.</p>
                 <p class="favorites">Meus projetos favoritos.</p>
             </section>
-            <section class="gallery">
+            <section id="gallery" class="gallery">
                 <figure class="flip-card-container">
                     <img class="square-picture" src="./assets/1.jpg" alt="">
                 </figure>
@@ -118,7 +118,7 @@
         <!--footer-->
         <footer>
             <section class="copyright">
-                <p>&copy; Naira Cirino | License CC BY-NC-SA</p>
+                <p><a href="">&copy; Naira Cirino | License CC BY-NC-SA</a></p>
             </section>
             <section class="language">
                 <select name="" id="">
@@ -138,8 +138,10 @@
         <!--end footer-->
     </div>
 
-    <!--scripts-->
+    <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/fe3e718820.js" defer crossorigin="anonymous"></script>
+    <!-- Custom scripts -->
+    <script src="./scripts/scripts.js"></script>
 </body>
 
 </html>
