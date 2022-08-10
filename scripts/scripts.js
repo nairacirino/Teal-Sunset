@@ -33,14 +33,17 @@ function showSelectedCategorie(selected) {
         }
     }
 
-    //recuperar os projetos da galeria 
-    
+    //recuperar os projetos selecionados da galeria 
+    var galleryContainer = document.getElementById('gallery');
+    var figuresCollection = galleryContainer.getElementsByTagName('figure');
+    var selectedFigures = document.getElementById('gallery').getElementsByClassName(classArray[1]);
 
-    // exibir os projetos na galeria
-    for (i = 0; i < descriptionsCollection.length; i++) {
-    if (classArray[1] == "all-projects") {
-
+    for (i = 0; i < figuresCollection.length; i++) {
+        figuresCollection[i].classList.add("hide");
     }
+
+    for (i = 0; i < selectedFigures.length; i++) {
+        selectedFigures[i].classList.remove("hide");
     }
 }
 
