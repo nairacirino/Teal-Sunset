@@ -78,7 +78,7 @@
 
 .gallery {
     box-sizing: border-box;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     @include mixins.flex-rule(row, center, space-evenly, normal, wrap);
 
     figure {
