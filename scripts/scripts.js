@@ -36,7 +36,7 @@ function showSelectedCategorie(selected) {
     //recuperar os projetos selecionados da galeria 
     var galleryContainer = document.getElementById('gallery');
     var figuresCollection = galleryContainer.getElementsByTagName('figure');
-    var selectedFigures = document.getElementById('gallery').getElementsByClassName(classArray[1]);
+    var selectedFigures = document.getElementById('gallery').getElementsByClassName(classArray[1]); 
 
     for (i = 0; i < figuresCollection.length; i++) {
         figuresCollection[i].classList.add("hide");
