@@ -38,10 +38,17 @@ body {
 }
 
 .container {
-   width: 80%;
-   max-width: 1200px;
+   width: 100%;
    background-color: style-guide.$white;
-   @include mixins.square;
+}
+
+@media (min-width: 1075px) {
+   .container {
+      width: 80%;
+      max-width: 1200px;
+      background-color: style-guide.$white;
+      @include mixins.square;
+   }
 }
 
 ul {

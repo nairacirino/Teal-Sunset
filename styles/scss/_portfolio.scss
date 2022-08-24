@@ -9,49 +9,104 @@
     width: 100%;
     margin: 3rem 0;
     padding: 0 2rem;
+    @include mixins.flex-rule(column, center, space-evenly, center, wrap);
+@media (min-width: 601px) {
     @include mixins.flex-rule(row, center, space-evenly, center, wrap);
+}
+
     text-align: center;
 
+    @media (min-width: 601px) {
     figure {
-        width: 40%;
+        width: 30%;
+    }
+    }
+
+    @media (min-width: 768px) {
+        figure {
+            width: 40%;
+        }
     }
 
     .round-picture {
-        @include mixins.round-pictures(15vw);
+        @include mixins.round-pictures(40vw);
         @include mixins.square;
     }
 
+    @media (min-width: 601px) {
+    .round-picture {
+        @include mixins.round-pictures(25vw);
+    }
+}
+
+    @media (min-width: 768px) {
+        .round-picture {
+            @include mixins.round-pictures(15vw);
+        }
+    }
+
     .id-text {
-        width: 60%;
         padding: 2rem;
         text-align: justify;
 
         p {
-            width: 90%;
+            width: 100%;
             font-size: 1rem;
+        }
+    }
+
+    @media (min-width: 601px) {
+    .id-text {
+        width: 70%;
+    }
+}
+
+    @media (min-width: 768px) {
+        .id-text {
+            width: 60%;
+
+            p {
+                width: 90%;
+            }
         }
     }
 }
 
 .highlights {
     @include mixins.flex-rule(row, center, center, normal, wrap);
-    gap: 60px;
+    gap: 30px;
+    @media (min-width: 601px) {
+        gap: 60px;
+    }
     text: {
         align: center;
         transform: uppercase;
     }
+
     font: {
         size: 0.7rem;
         weight: bold;
     }
+
     figcaption {
         margin-top: 0.5rem;
         cursor: pointer;
     }
+
     .round-picture {
-        @include mixins.round-pictures(120px);
+        @include mixins.round-pictures(16vw);
         @include mixins.square;
         cursor: pointer;
+    }
+
+    @media (min-width: 601px) {
+        @include mixins.round-pictures(11vw);
+    }
+
+    @media (min-width: 1075px) {
+        .round-picture {
+            @include mixins.round-pictures(120px);
+        }
     }
 }
 
@@ -86,7 +141,25 @@
     }
 
     .square-picture {
-        @include mixins.square-pictures(23vw);
+        @include mixins.square-pictures(80vw);
+    }
+
+    @media (min-width: 500px) {
+        .square-picture {
+            @include mixins.square-pictures(45vw);
+        }
+    }
+
+    @media (min-width: 601px) {
+        .square-picture {
+            @include mixins.square-pictures(30vw);
+        }
+    }
+
+    @media (min-width: 1075px) {
+        .square-picture {
+            @include mixins.square-pictures(23vw);
+        }
     }
 }
 
