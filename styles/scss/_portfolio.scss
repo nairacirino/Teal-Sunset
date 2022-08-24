@@ -167,24 +167,6 @@
     }
 }
 
-footer {
-    padding: 0.5rem 1rem;
-    @include mixins.flex-rule(row, center, space-between, center, wrap);
-    background-color: style-guide.$light-color1;
-    color: style-guide.$dark-color1;
-
-    .social-links,
-    .language,
-    .copyright {
-        width: 30%;
-    }
-
-    .round-picture {
-        @include mixins.round-pictures(1.5rem);
-        @include mixins.square;
-    }
-}
-
 .social-links {
     @include mixins.flex-rule(row, center, flex-end, normal, wrap);
     gap: 25px;
