@@ -103,9 +103,11 @@
   -webkit-box-shadow: 2px 2px 10px 2px #a1a1a1;
   box-shadow: 2px 2px 10px 2px #a1a1a1;
   cursor: pointer;
+  max-width: 120px;
+  max-height: 120px;
 }
 @media (min-width: 601px) {
-  .highlights {
+  .highlights .round-picture {
     width: 11vw;
     height: 11vw;
     border-radius: 50%;
