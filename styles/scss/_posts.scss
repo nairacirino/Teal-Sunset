@@ -27,7 +27,7 @@
 
     .main-menu {
         width: fit-content;
-        margin-right: 2rem;
+        margin: 2rem 2rem 2rem 0;
         @include mixins.flex-rule(column, center, center, center, nowrap);
         gap: 2rem;
         background-color: style-guide.$white-transparency;
