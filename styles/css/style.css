@@ -238,13 +238,18 @@
 
 .post-page .banner {
   box-sizing: border-box;
-  margin: 3rem 2rem;
+  margin: 2rem 2rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   align-content: normal;
   flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .post-page .banner {
+    margin: 3rem 2rem;
+  }
 }
 .post-page .banner .banner-picture {
   display: flex;
@@ -254,11 +259,15 @@
   align-content: center;
   flex-wrap: nowrap;
   width: 100%;
-  height: 23vw;
   background-image: url("../../assets/3.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .post-page .banner .banner-picture {
+    height: 23vw;
+  }
 }
 .post-page .main-menu {
   width: fit-content;
@@ -286,19 +295,39 @@
   width: 100%;
   margin-bottom: 3rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   align-content: normal;
   flex-wrap: wrap;
 }
+@media (min-width: 768px) {
+  .post-page main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: normal;
+    flex-wrap: wrap;
+  }
+}
 .post-page main section {
-  width: 65%;
   padding: 0 2rem;
 }
+@media (min-width: 768px) {
+  .post-page main section {
+    width: 65%;
+  }
+}
 .post-page main aside {
-  width: 35%;
+  margin-top: 2rem;
   padding: 0 2rem;
+}
+@media (min-width: 768px) {
+  .post-page main aside {
+    width: 35%;
+    margin-top: 0;
+  }
 }
 .post-page main textarea {
   width: 100%;
@@ -330,13 +359,23 @@
 }
 .post-page .comment {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
   align-content: normal;
   flex-wrap: nowrap;
-  gap: 2rem;
   font-size: 0.8rem;
+}
+@media (min-width: 768px) {
+  .post-page .comment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: normal;
+    flex-wrap: nowrap;
+    gap: 2rem;
+  }
 }
 .post-page .comment .round-picture {
   width: 85px;

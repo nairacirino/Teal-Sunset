@@ -6,13 +6,18 @@
 .post-page {
     .banner {
         box-sizing: border-box;
-        margin: 3rem 2rem;
+        margin: 2rem 2rem;
+        @media (min-width: 768px) {
+            margin: 3rem 2rem;
+        }
         @include mixins.flex-rule(row, center, space-evenly, normal, wrap);
 
         .banner-picture {
             @include mixins.flex-rule(row, center, space-between, center, nowrap);
             width: 100%;
-            height: 23vw;
+            @media (min-width: 768px) {
+                height: 23vw;
+            }
             background-image: url("../../assets/3.jpg");
             background-size: cover;
             background-position: center;
@@ -43,15 +48,25 @@
     main {
         width: 100%;
         margin-bottom: 3rem;
-        @include mixins.flex-rule(row, flex-start, space-between, normal, wrap);
+        @include mixins.flex-rule(column, flex-start, space-between, normal, wrap);
+        @media (min-width: 768px) {
+            @include mixins.flex-rule(row, flex-start, space-between, normal, wrap);
+        }
 
         section {
-            width: 65%;
+            @media (min-width: 768px) {
+                width: 65%;
+            }
             padding: 0 2rem;
         }
 
         aside {
-            width: 35%;
+
+            margin-top: 2rem;
+            @media (min-width: 768px) {
+                width: 35%;
+                margin-top: 0;
+            }
             padding: 0 2rem;
         }
 
@@ -85,8 +100,11 @@
     }
 
     .comment {
-        @include mixins.flex-rule(row, center, space-between, normal, nowrap);
-        gap: 2rem;
+        @include mixins.flex-rule(column, flex-start, space-between, normal, nowrap);
+        @media (min-width: 768px) {
+            @include mixins.flex-rule(row, center, space-between, normal, nowrap);
+            gap: 2rem;
+        }
         font-size: 0.8rem;
 
         .round-picture {
@@ -119,7 +137,7 @@
         h3 {
             font: {
                 size: 1.2rem;
-                weight: bold; 
+                weight: bold;
             }
         }
 
