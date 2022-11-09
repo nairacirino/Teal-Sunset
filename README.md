@@ -2,6 +2,8 @@
 
 <img src="https://img.shields.io/badge/STATUS-Complete-blue" alt="badge"/>
 
+<img src="./tealsunset.png"/>
+
 ## SUMARIO
 
    * [Descrição do Projeto](#DESCRIÇÃO-DO-PROJETO)
