@@ -78,6 +78,7 @@
 }
 
 .highlights {
+    padding: 0rem 2rem;
     @include mixins.flex-rule(row, center, center, normal, wrap);
     gap: 30px;
     @media (min-width: 601px) {
@@ -99,7 +100,10 @@
     }
 
     .round-picture {
+        @include mixins.round-pictures(24vw);
+        @media (min-width: 601px) {
         @include mixins.round-pictures(16vw);
+        }
         @include mixins.square;
         cursor: pointer;
         max-width: 120px;
@@ -120,7 +124,7 @@
 }
 
 .pagination {
-    padding: 3rem 0;
+    padding: 3rem 2rem;
     text-align: center;
 
     ul {
