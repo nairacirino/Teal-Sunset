@@ -100,7 +100,10 @@
     }
 
     .round-picture {
+        @include mixins.round-pictures(22vw);
+        @media (min-width: 601px) {
         @include mixins.round-pictures(16vw);
+        }
         @include mixins.square;
         cursor: pointer;
         max-width: 120px;

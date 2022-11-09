@@ -103,14 +103,21 @@
   cursor: pointer;
 }
 .highlights .round-picture {
-  width: 16vw;
-  height: 16vw;
+  width: 22vw;
+  height: 22vw;
   border-radius: 50%;
   -webkit-box-shadow: 2px 2px 10px 2px #a1a1a1;
   box-shadow: 2px 2px 10px 2px #a1a1a1;
   cursor: pointer;
   max-width: 120px;
   max-height: 120px;
+}
+@media (min-width: 601px) {
+  .highlights .round-picture {
+    width: 16vw;
+    height: 16vw;
+    border-radius: 50%;
+  }
 }
 @media (min-width: 601px) {
   .highlights .round-picture {
