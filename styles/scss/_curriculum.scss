@@ -41,7 +41,7 @@
     .n1 {
         width: 60%;
     }
-    
+
     .n2 {
         width: 25%;
     }
@@ -60,11 +60,18 @@
 
     main {
         width: 100%;
-        @include mixins.flex-rule(row, stretch, space-between, normal, wrap);
+        @include mixins.flex-rule(column, stretch, space-between, normal, wrap);
+
+        @media (min-width: 768px) {
+            @include mixins.flex-rule(row, stretch, space-between, normal, wrap);
+        }
 
         section {
-            width: 65%;
             padding: 0 2rem 2rem 2rem;
+
+            @media (min-width: 768px) {
+                width: 65%;
+            }
 
             li {
                 margin-top: 2rem;
@@ -73,7 +80,6 @@
 
         aside {
             @include mixins.flex-rule(column, stretch, space-between, normal, wrap);
-            width: 30%;
             padding: 2rem;
             background-color: style-guide.$light-color2;
             text-align: center;
@@ -81,12 +87,18 @@
                 weight: bold;
             }
             div {
-                line-height: 2.5vw;
-
+                @media (min-width: 768px) {
+                    line-height: 2.5vw;
+                }
                 h3 {
                     background-color: style-guide.$black;
                     color: style-guide.$white;
-                    margin-bottom: 1rem;
+                    margin-bottom: 2rem;
+                    margin-top: 2rem;
+                    @media (min-width: 768px) {
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                    }
                     font: {
                         size: 95%;
                     }
@@ -97,6 +109,9 @@
                         margin-bottom: 1.5rem;
                     }
                 }
+            }
+            @media (min-width: 768px) {
+                width: 30%;
             }
         }
     }

@@ -46,7 +46,12 @@
     }
 
     .id-text {
-        padding: 2rem;
+
+        padding: 2rem 0 0 0;
+        
+        @media (min-width: 768px) {
+            padding: 2rem;
+        }
         text-align: justify;
 
         p {

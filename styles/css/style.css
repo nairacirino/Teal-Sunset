@@ -53,8 +53,13 @@
   }
 }
 .id-card .id-text {
-  padding: 2rem;
+  padding: 2rem 0 0 0;
   text-align: justify;
+}
+@media (min-width: 768px) {
+  .id-card .id-text {
+    padding: 2rem;
+  }
 }
 .id-card .id-text p {
   width: 100%;
@@ -444,15 +449,29 @@
 .curriculum main {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: stretch;
   justify-content: space-between;
   align-content: normal;
   flex-wrap: wrap;
 }
+@media (min-width: 768px) {
+  .curriculum main {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    align-content: normal;
+    flex-wrap: wrap;
+  }
+}
 .curriculum main section {
-  width: 65%;
   padding: 0 2rem 2rem 2rem;
+}
+@media (min-width: 768px) {
+  .curriculum main section {
+    width: 65%;
+  }
 }
 .curriculum main section li {
   margin-top: 2rem;
@@ -464,24 +483,37 @@
   justify-content: space-between;
   align-content: normal;
   flex-wrap: wrap;
-  width: 30%;
   padding: 2rem;
   background-color: #f2a24b;
   text-align: center;
   font-weight: bold;
 }
-.curriculum main aside div {
-  line-height: 2.5vw;
+@media (min-width: 768px) {
+  .curriculum main aside div {
+    line-height: 2.5vw;
+  }
 }
 .curriculum main aside div h3 {
   background-color: #5e5e5e;
   color: #fcfcfa;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
   font-size: 95%;
+}
+@media (min-width: 768px) {
+  .curriculum main aside div h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 .curriculum main aside div:nth-child(1) h3 {
   margin-top: -45px;
   margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .curriculum main aside {
+    width: 30%;
+  }
 }
 
 /* Copyright 2022 Naira Cirino | License CC BY-NC-SA
