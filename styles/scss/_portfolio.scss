@@ -100,7 +100,7 @@
     }
 
     .round-picture {
-        @include mixins.round-pictures(22vw);
+        @include mixins.round-pictures(24vw);
         @media (min-width: 601px) {
         @include mixins.round-pictures(16vw);
         }
