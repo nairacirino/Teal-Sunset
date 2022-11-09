@@ -78,6 +78,7 @@
 }
 
 .highlights {
+    padding: 0rem 2rem;
     @include mixins.flex-rule(row, center, center, normal, wrap);
     gap: 30px;
     @media (min-width: 601px) {
@@ -120,7 +121,7 @@
 }
 
 .pagination {
-    padding: 3rem 0;
+    padding: 3rem 2rem;
     text-align: center;
 
     ul {

@@ -80,6 +80,7 @@
 }
 
 .highlights {
+  padding: 0rem 2rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -127,7 +128,7 @@
 }
 
 .pagination {
-  padding: 3rem 0;
+  padding: 3rem 2rem;
   text-align: center;
 }
 .pagination ul {
