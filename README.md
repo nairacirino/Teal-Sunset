@@ -10,7 +10,7 @@
    * [Deploy](#DEPLOY)
    * [Linguagens e ferramentas utilizadas](#LINGUAGENS-E-FERRAMENTAS-UTILIZADAS)
    * [Considerações](#CONSIDERAÇÕES)
-   * [Licença, usos e restrições](#LICENÇA,-USOS-E-RESTRIÇÕES)
+   * [Licença e restrições](#LICENÇA-E-RESTRIÇÕES)
 
 ## DESCRIÇÃO DO PROJETO
 
@@ -52,7 +52,7 @@ Pretendo também:
    * Transformar o modelo em tema WordPress, utilizando PHP.
    * Refazer o projeto usando Angular.
 
-## LICENÇA, USOS E RESTRIÇÕES
+## LICENÇA E RESTRIÇÕES
 
 Este projeto foi criado sob a licença Creative Commons de Atribuição Não Comercial Compartilha Igual 3.0 Brasil (CC BY-NC-SA 3.0 BR). Você pode obter todos os detalhes sobre esse tipo de licença <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/br/">aqui</a>, mas se estiver com preguiça, aqui vai o resumo:
 
